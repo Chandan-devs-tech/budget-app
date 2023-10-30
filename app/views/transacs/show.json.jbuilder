@@ -1,1 +1,1 @@
-json.partial! "transacs/transac", transac: @transac
+json.partial! 'transacs/transac', transac: @transac

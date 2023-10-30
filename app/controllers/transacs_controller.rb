@@ -1,5 +1,5 @@
 class TransacsController < ApplicationController
-  before_action :set_transac, only: %i[ show edit update destroy ]
+  before_action :set_transac, only: %i[show edit update destroy]
 
   # GET /transacs or /transacs.json
   def index
@@ -7,8 +7,7 @@ class TransacsController < ApplicationController
   end
 
   # GET /transacs/1 or /transacs/1.json
-  def show
-  end
+  def show; end
 
   # GET /transacs/new
   def new
@@ -16,8 +15,7 @@ class TransacsController < ApplicationController
   end
 
   # GET /transacs/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /transacs or /transacs.json
   def create
@@ -25,7 +23,7 @@ class TransacsController < ApplicationController
 
     respond_to do |format|
       if @transac.save
-        format.html { redirect_to transac_url(@transac), notice: "Transac was successfully created." }
+        format.html { redirect_to transac_url(@transac), notice: 'Transac was successfully created.' }
         format.json { render :show, status: :created, location: @transac }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +36,7 @@ class TransacsController < ApplicationController
   def update
     respond_to do |format|
       if @transac.update(transac_params)
-        format.html { redirect_to transac_url(@transac), notice: "Transac was successfully updated." }
+        format.html { redirect_to transac_url(@transac), notice: 'Transac was successfully updated.' }
         format.json { render :show, status: :ok, location: @transac }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,19 +50,20 @@ class TransacsController < ApplicationController
     @transac.destroy
 
     respond_to do |format|
-      format.html { redirect_to transacs_url, notice: "Transac was successfully destroyed." }
+      format.html { redirect_to transacs_url, notice: 'Transac was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_transac
-      @transac = Transac.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def transac_params
-      params.require(:transac).permit(:name, :amount, :author_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_transac
+    @transac = Transac.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def transac_params
+    params.require(:transac).permit(:name, :amount, :author_id)
+  end
 end
