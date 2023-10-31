@@ -20,6 +20,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [Key features of the application.](#key-features-of-the-application)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -53,7 +54,7 @@ Ruby on Rails
 
 ### Key Features <a name="key-features"></a>
 
-Key features of the application.
+### Key features of the application.
 
 - User Registration & Authentication
 - Category & Budget Management
