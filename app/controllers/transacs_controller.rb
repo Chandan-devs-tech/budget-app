@@ -1,5 +1,6 @@
 class TransacsController < ApplicationController
   before_action :set_transac, only: %i[show edit update destroy]
+  before_action :authenticate_user!
 
   # GET /transacs or /transacs.json
   def index
