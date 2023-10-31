@@ -3,4 +3,5 @@ Rails.application.routes.draw do
     resources :transacs, only: [:index, :show, :new, :create]
   end
   devise_for :users
+  root to: "splash#show"
 end
