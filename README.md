@@ -18,15 +18,19 @@
 - [📖 Budget app ](#-budget-app-)
     - [The Ruby on Rails capstone project involves developing a mobile web application for budget management. In this project, you will build a Ruby on Rails application that enables users to:](#the-ruby-on-rails-capstone-project-involves-developing-a-mobile-web-application-for-budget-management-in-this-project-you-will-build-a-ruby-on-rails-application-that-enables-users-to)
   - [🛠 Built With ](#-built-with-)
+    - [Ruby on Rails](#ruby-on-rails)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
     - [Key features of the application.](#key-features-of-the-application)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
+    - [In order to run this project you need:](#in-order-to-run-this-project-you-need)
     - [Setup](#setup)
     - [Install](#install)
+    - [Install this project with:](#install-this-project-with)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
+    - [Features will be added to the project.](#features-will-be-added-to-the-project)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -43,7 +47,7 @@
 - Track and visualize their expenses for each category, providing insights into their spending habits.
 
 ## 🛠 Built With <a name="built-with"></a>
-Ruby on Rails
+### Ruby on Rails
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -75,7 +79,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+### In order to run this project you need:
 - laptop
 - git
 - Code Editor.
@@ -93,7 +97,7 @@ sh
 
 ### Install
 
-Install this project with:
+### Install this project with:
 
 - Install <a href="https://www.postgresql.org/">PostgreSQL</a>.
 - Install <a href="https://rubyonrails.org/">Ruby On Rails</a> using rails new recipe-app --database=postgresql command.
@@ -119,7 +123,7 @@ sh
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-Features will be added to the project.
+### Features will be added to the project.
 
 - Splash screen
 - Sign up and log in pages
