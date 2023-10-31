@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/Md3xqkTkB2kpY5pshY/giphy.gif" alt="Animation" width="150">
+  <img src="https://media.giphy.com/media/AkkdgWpPiCvIViwugB/giphy.gif" alt="Animation" width="150">
 </p>
 
 <a name="readme-top"></a>
@@ -16,21 +16,16 @@
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Budget app ](#-budget-app-)
-    - [The Ruby on Rails capstone project involves developing a mobile web application for budget management. In this project, you will build a Ruby on Rails application that enables users to:](#the-ruby-on-rails-capstone-project-involves-developing-a-mobile-web-application-for-budget-management-in-this-project-you-will-build-a-ruby-on-rails-application-that-enables-users-to)
   - [🛠 Built With ](#-built-with-)
-    - [Ruby on Rails](#ruby-on-rails)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-    - [Key features of the application.](#key-features-of-the-application)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
-    - [In order to run this project you need:](#in-order-to-run-this-project-you-need)
     - [Setup](#setup)
     - [Install](#install)
     - [Install this project with:](#install-this-project-with)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
-    - [Features will be added to the project.](#features-will-be-added-to-the-project)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -40,14 +35,14 @@
 
 # 📖 Budget app <a name="about-project"></a>
 
-### The Ruby on Rails capstone project involves developing a mobile web application for budget management. In this project, you will build a Ruby on Rails application that enables users to:
+The Ruby on Rails capstone project involves developing a mobile web application for budget management. In this project, you will build a Ruby on Rails application that enables users to:
 
 - Register and log in to maintain the privacy of their data.
 - Add new financial transactions linked to specific categories.
 - Track and visualize their expenses for each category, providing insights into their spending habits.
 
 ## 🛠 Built With <a name="built-with"></a>
-### Ruby on Rails
+Ruby on Rails
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -58,7 +53,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-### Key features of the application.
+Key features of the application 🦖
 
 - User Registration & Authentication
 - Category & Budget Management
@@ -75,11 +70,11 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow these steps
 
 ### Prerequisites
 
-### In order to run this project you need:
+In order to run this project you need 🦖
 - laptop
 - git
 - Code Editor.
@@ -89,12 +84,13 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder 🦖
 
+```
 sh
   cd my-folder
   git clone https://github.com/Chandan-devs-tech/budget-app.git
-
+```
 ### Install
 
 ### Install this project with:
@@ -123,7 +119,7 @@ sh
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-### Features will be added to the project.
+Features will be added to the project 🦖
 
 - Splash screen
 - Sign up and log in pages
