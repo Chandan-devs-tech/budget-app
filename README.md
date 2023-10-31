@@ -55,14 +55,14 @@ Ruby on Rails
 
 Key features of the application.
 
-- Food List Management
-- Recipe Management
-- General Shopping List
-- Public Recipe Sharing
-- Food and Recipe CRUD
-- Integration specs for Views and fixing n+1 problems
-- Add Devise
-- User Authentication
+- User Registration & Authentication
+- Category & Budget Management
+- Transaction Management
+- Category & Transaction Creation
+- Testing (Unit & Integration)
+- Technical Stack (PostgreSQL, Devise)
+- Security Validation
+- Online Deployment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
