@@ -1,16 +1,35 @@
-<p style="color: green"><%= notice %></p>
+<div class="categories-page">
+<p style="color: #fff" class='notice'><%= notice %></p>
+  <div class="categories-navbar">
+    <div class="nav-title">
+      <%= image_tag('hamburger.png', class: 'ham-btn', alt: 'Hamburger') %>
+      <h1 class="nav-text">List of categories</h1>
+      <%= image_tag('search.png', class: 'search-btn', alt: 'Search') %>
+    </div>
+    <div class="nav-sub-title">
+      <p>Most recent</p>
+      <p>Most ancient</p>
+      <% if user_signed_in? %>
+        <%= button_to "Log out", destroy_user_session_path, method: :delete, class: 'log-out-btn' %>  
+      <% end %>
+    </div>
+  </div>
 
-<h1>Categories</h1>
+  <div class="category-gift">
+    <p>Gift credit</p>
+    <p>$45.00</p>
+  </div>
+  
+  <div id="categories">
+    <% @categories.each do |category| %>
+      <%= render category %>
+      <%# <p> %>
+        <%#= link_to "Show this category", category %>
+      <%# </p> %>
+    <% end %>
+  </div>
 
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
-  <% end %>
+  <div class="add-category-btn">
+    <%= link_to "Add Category", new_category_path, class: 'add-category-text' %>
+  </div>
 </div>
-<% if user_signed_in? %>
-  <%= button_to "Log out", destroy_user_session_path, method: :delete %>  
-<% end %>
-<%= link_to "New category", new_category_path %>
