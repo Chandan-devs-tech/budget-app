@@ -1,14 +1,41 @@
-<p style="color: green"><%= notice %></p>
+<div class="transacs-page">
+  <p style="color: #fff" class='notice'><%= notice %></p>
+  <div class="transacs-navbar">
+    <div class="nav-title">
+      <%= image_tag('hamburger.png', class: 'ham-btn', alt: 'Hamburger') %>
+      <h1 class="nav-text">Transactions</h1>
+      <%= image_tag('search.png', class: 'search-btn', alt: 'Search') %>
+    </div>
+    <div class="transac-nav-sub-title">
+      <div class="transacs-total">
+        <p>Total amount: $<%= @total_amount %></p>
+      </div>
+      <div class="transacs-btn">
+        <p>Most recent</p>
+        <p>Most ancient</p>
+        <% if user_signed_in? %>
+          <%= button_to "Log out", destroy_user_session_path, method: :delete, class: 'log-out-btn' %>  
+        <% end %>
+      </div>
+    </div>
+  </div>
 
-<h1>Transacs</h1>
+  <div class="category-gift">
+    <p>Gift credit</p>
+    <p>$45.00</p>
+  </div>
 
-<div id="transacs">
-  <% @transacs.each do |transac| %>
-    <%= render transac %>
-    <p>
-      <%= link_to "Show this transac", transac %>
-    </p>
-  <% end %>
+  <div id="transacs">
+    <% @transacs.each do |transac| %>
+      <%= render transac %>
+      <%# <p> %>
+        <%#= link_to "Show this transac", transac %>
+      <%# </p> %>
+    <% end %>
+  </div>
+
+  <div class="add-transac-btn">
+    <%= link_to "Add transaction", new_category_transac_path(@category), class: 'add-transac-text' %>
+    <%= link_to "Back to catgories", categories_path, class: 'add-transac-text' %>
+  </div>
 </div>
-
-<%#= link_to "New transac", new_transac_path %>

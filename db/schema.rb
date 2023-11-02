@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_30_193804) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_01_194233) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,13 +23,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_30_193804) do
     t.index ["author_id"], name: "index_categories_on_author_id"
   end
 
-  create_table "category_transacs", force: :cascade do |t|
+  create_table "transac_categories", force: :cascade do |t|
     t.bigint "category_id", null: false
     t.bigint "transac_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_category_transacs_on_category_id"
-    t.index ["transac_id"], name: "index_category_transacs_on_transac_id"
+    t.index ["category_id"], name: "index_transac_categories_on_category_id"
+    t.index ["transac_id"], name: "index_transac_categories_on_transac_id"
   end
 
   create_table "transacs", force: :cascade do |t|
@@ -55,7 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_30_193804) do
   end
 
   add_foreign_key "categories", "users", column: "author_id"
-  add_foreign_key "category_transacs", "categories"
-  add_foreign_key "category_transacs", "transacs"
+  add_foreign_key "transac_categories", "categories"
+  add_foreign_key "transac_categories", "transacs"
   add_foreign_key "transacs", "users", column: "author_id"
 end
