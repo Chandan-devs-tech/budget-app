@@ -154,7 +154,7 @@ Feel free to check the [issues page](https://github.com/Chandan-devs-tech/budget
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, show your support by giving a star ⭐️, thanks in advance.
+If you like  this project, show your support by giving a star ⭐️, thanks in advance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
