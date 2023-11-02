@@ -162,7 +162,7 @@ If you like this project, show your support by giving a star ⭐️, thanks in a
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for including this in their curriculum.
+I would like to thank  Microverse for including this in their curriculum.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
