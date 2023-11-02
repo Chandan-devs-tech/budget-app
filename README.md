@@ -19,6 +19,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -63,6 +64,15 @@ Key features of the application 🦖
 - Technical Stack (PostgreSQL, Devise)
 - Security Validation
 - Online Deployment
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link]()
+- [Video Presenation]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,7 +154,7 @@ Feel free to check the [issues page](https://github.com/Chandan-devs-tech/budget
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, show your support by giving a star ⭐️, thanks in advance.
+If you like  this project, show your support by giving a star ⭐️, thanks in advance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +162,7 @@ If you like this project, show your support by giving a star ⭐️, thanks in a
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for including this in their curriculum.
+I would like to thank  Microverse for including this in their curriculum.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,6 +170,6 @@ I would like to thank Microverse for including this in their curriculum.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT]() licensed.
+This project is [MIT](https://github.com/Chandan-devs-tech/budget-app/blob/dev/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

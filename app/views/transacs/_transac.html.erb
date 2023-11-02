@@ -1,6 +1,7 @@
 <div class="transac-container">
   <div class="icon-container">
-    <%= image_tag(@category.icon, class: 'category-img', alt: 'Category image') %>
+    <%#= image_tag(@category.icon, class: 'category-img', alt: 'Category image') %>
+    <img src="<%= (@category.icon) %>" alt="Transac Logo" class="category-img">
   </div>
   <div class="name-container">
     <p><%= transac.name %></p>
