@@ -72,7 +72,8 @@ body {
 
 .sign-in-page,
 .sign-up-page,
-.new-category-page {
+.new-category-page,
+.new-transac-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,7 +93,8 @@ body {
   height: 45vh;
 }
 
-.add-category-page {
+.add-category-page,
+.add-transac-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,6 +128,7 @@ h2 {
 }
 
 .new_user,
+.new_transcation,
 .new-category-form {
   width: 40%;
   display: flex;
@@ -142,7 +145,8 @@ h2 {
 }
 
 .field input,
-.actions input {
+.actions input,
+.field select {
   width: 100%;
   font-size: 20px;
   padding: 8px;
@@ -161,14 +165,16 @@ h2 {
   font-size: 18px;
 }
 
-.categories-page {
+.categories-page,
+.transacs-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.categories-navbar {
+.categories-navbar,
+.transacs-navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,7 +198,21 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 8px;
+  padding: 12px;
+}
+
+.transac-nav-sub-title {
+  background-color: #3778c2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.transacs-btn {
+  display: flex;
+  flex-direction: row;
 }
 
 .notice {
@@ -200,7 +220,8 @@ h2 {
   top: 0;
 }
 
-.nav-sub-title p {
+.nav-sub-title p,
+.transac-nav-sub-title p {
   color: #fff;
   padding: 8px;
   font-size: 18px;
@@ -229,7 +250,8 @@ h2 {
   cursor: pointer;
 }
 
-.add-category-btn {
+.add-category-btn,
+.add-transac-btn {
   background: #5fb523;
   padding: 20px;
   border-radius: 5px;
@@ -241,12 +263,14 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
-.add-category-text {
+.add-category-text,
+.add-transac-text {
   color: #fff;
   text-decoration: none;
-  padding: 20px 115px;
+  padding: 20px 81px;
   border: 1px solid #fff;
 }
 
@@ -255,7 +279,8 @@ h2 {
   height: 75px;
 }
 
-#categories {
+#categories,
+#transacs {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -277,7 +302,8 @@ h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.category-container {
+.category-container,
+.transac-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -308,8 +334,14 @@ h2 {
   color: #434b54;
 }
 
+/* #transac_category_id {
+  width: 40%;
+  font-size: 14px;
+} */
+
 @media screen and (max-width: 767px) {
-  .category-container {
+  .category-container,
+  .transac-container {
     width: 90%;
     padding: 10px;
   }
@@ -324,7 +356,8 @@ h2 {
   }
 
   .new-category-form,
-  .new_user {
+  .new_user,
+  .new_transcation {
     width: 90%;
   }
 
@@ -335,5 +368,16 @@ h2 {
   .log-in-btn,
   .sign-up-btn {
     width: 80%;
+  }
+
+  .add-transac-text {
+    padding: 18px 10px;
+    font-size: 19px;
+    font-weight: 900;
+  }
+
+  .transac-nav-sub-title {
+    display: flex;
+    flex-direction: column;
   }
 }

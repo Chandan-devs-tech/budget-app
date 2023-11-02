@@ -1,32 +1,39 @@
-<%= form_with(model: transac) do |form| %>
-  <% if transac.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(transac.errors.count, "error") %> prohibited this transac from being saved:</h2>
+<div class="add-transac-page">
+  <%= form_with(model: @transac, url: category_transacs_path(@category), class: 'new_transcation') do |form| %>
+    <% if transac.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(transac.errors.count, "error") %> prohibited this transac from being saved:</h2>
 
-      <ul>
-        <% transac.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+        <ul>
+          <% transac.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class='field'>
+      <%= form.label :name, style: "display: block" %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class='field'>
+      <%= form.label :amount, style: "display: block" %>
+      <%= form.text_field :amount %>
+    </div>
+
+    <div class='field'>
+      <%= form.label :category_id, style: "display: block" %>
+      <%= form.collection_select :category_id, @categories, :id, :name %>
+    </div>
+    <%# <div> %>
+      <%#= form.label :author_id, style: "display: block" %>
+      <%#= form.text_field :author_id %>
+    <%# </div> %>
+
+    <div class='actions'>
+      <%= form.submit 'Save' %>
+      <%#= link_to "Back to transacs", category_transacs_path %>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :amount, style: "display: block" %>
-    <%= form.text_field :amount %>
-  </div>
-
-  <div>
-    <%= form.label :author_id, style: "display: block" %>
-    <%= form.text_field :author_id %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>

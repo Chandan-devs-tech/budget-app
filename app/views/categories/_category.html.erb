@@ -8,7 +8,7 @@
       <p><%= category.created_at.strftime('%d-%B-%Y') %></p>
     </div>
     <div class="amount-container">
-      <p>$0.00</p>
+      <p>$<%= category.transacs.sum(:amount) %></p>
     </div>
   </div>
 <% end %>

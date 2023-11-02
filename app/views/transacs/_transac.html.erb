@@ -1,17 +1,17 @@
-<div id="<%= dom_id transac %>">
-  <p>
-    <strong>Name:</strong>
-    <%= transac.name %>
-  </p>
-
-  <p>
-    <strong>Amount:</strong>
-    <%= transac.amount %>
-  </p>
-
-  <p>
-    <strong>Author:</strong>
-    <%= transac.author_id %>
-  </p>
-
+<div class="transac-container">
+  <div class="icon-container">
+    <%= image_tag(@category.icon, class: 'category-img', alt: 'Category image') %>
+  </div>
+  <div class="name-container">
+    <p><%= transac.name %></p>
+    <p><%= transac.created_at.strftime('%d-%B-%Y') %></p>
+  </div>
+  <div class="amount-container">
+    <p>$<%= transac.amount %></p>
+  </div>
 </div>
+<%#= link_to category_transacs_path(category), class: 'category-transac-link' do %>
+<%# end %>
+<%# <div id=> %>
+<%#= dom_id transac %>
+<%# </div> %>

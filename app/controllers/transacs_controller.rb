@@ -4,7 +4,9 @@ class TransacsController < ApplicationController
 
   # GET /transacs or /transacs.json
   def index
-    @transacs = Transac.all
+    @category = Category.find(params[:category_id])
+    @transacs = @category.transacs.order(created_at: :desc)
+    @total_amount = @transacs.sum(:amount)
   end
 
   # GET /transacs/1 or /transacs/1.json
@@ -12,7 +14,11 @@ class TransacsController < ApplicationController
 
   # GET /transacs/new
   def new
-    @transac = Transac.new
+    @categories = Category.where(author_id: current_user, id: params[:category_id])
+    # @categories = Category.where(author_id: current_user.id)
+    @category = Category.find(params[:category_id])
+    # @transac = Transac.new
+    @transac = @category.transacs.build
   end
 
   # GET /transacs/1/edit
@@ -20,11 +26,15 @@ class TransacsController < ApplicationController
 
   # POST /transacs or /transacs.json
   def create
-    @transac = Transac.new(transac_params)
+    @category = Category.find(params[:category_id])
+    # @transac = Transac.new(transac_params)
+    @transac = @category.transacs.build(transac_params)
+    @transac.author_id = current_user.id
 
     respond_to do |format|
       if @transac.save
-        format.html { redirect_to transac_url(@transac), notice: 'Transac was successfully created.' }
+        @transac.categories.push(Category.find(params[:category_id]))
+        format.html { redirect_to category_transacs_path(@category), notice: 'Transac was successfully created.' }
         format.json { render :show, status: :created, location: @transac }
       else
         format.html { render :new, status: :unprocessable_entity }
