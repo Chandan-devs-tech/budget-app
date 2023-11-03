@@ -71,8 +71,8 @@ Key features of the application 🦖
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
-- [Video Presenation]()
+- [Live Demo Link](https://budget-app-ugvx.onrender.com/)
+- [Video Presenation](https://www.loom.com/share/ab83252607c64d3badb14d26d21fad48?sid=01eb9aba-e801-4f6c-8317-85dc9c523f85)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,7 +162,8 @@ If you like  this project, show your support by giving a star ⭐️, thanks in 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank  Microverse for including this in their curriculum.
+- I would like to thank  Microverse for including this in their curriculum.
+- I would like to thank (Gregoire Vella on Behance)[https://www.behance.net/gregoirevella] for the design of this app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,6 +171,6 @@ I would like to thank  Microverse for including this in their curriculum.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Chandan-devs-tech/budget-app/blob/dev/MIT.md) licensed.
+This project is [MIT](https://github.com/Chandan-devs-tech/budget-app/blob/feature/deployment/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
