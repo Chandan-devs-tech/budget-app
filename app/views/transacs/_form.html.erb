@@ -26,14 +26,9 @@
       <%= form.label :category_id, style: "display: block" %>
       <%= form.collection_select :category_id, @categories, :id, :name %>
     </div>
-    <%# <div> %>
-      <%#= form.label :author_id, style: "display: block" %>
-      <%#= form.text_field :author_id %>
-    <%# </div> %>
 
     <div class='actions'>
       <%= form.submit 'Save' %>
-      <%#= link_to "Back to transacs", category_transacs_path %>
     </div>
   <% end %>
 </div>
