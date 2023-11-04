@@ -1,0 +1,15 @@
+<%= link_to category_transacs_path(category), class: 'category-transac-link' do %>
+  <div class="category-container">
+    <div class="icon-container">
+      <%#= image_tag(category.icon, class: 'category-img', alt: 'Category image') %>
+      <img src="<%= (category.icon) %>" alt="Category Logo" class="category-img">
+    </div>
+    <div class="name-container">
+      <p><%= category.name %></p>
+      <p><%= category.created_at.strftime('%d-%B-%Y') %></p>
+    </div>
+    <div class="amount-container">
+      <p>$<%= category.transacs.sum(:amount) %></p>
+    </div>
+  </div>
+<% end %>

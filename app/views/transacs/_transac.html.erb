@@ -1,0 +1,13 @@
+<div class="transac-container">
+  <div class="icon-container">
+    <%#= image_tag(@category.icon, class: 'category-img', alt: 'Category image') %>
+    <img src="<%= (@category.icon) %>" alt="Transac Logo" class="category-img">
+  </div>
+  <div class="name-container">
+    <p><%= transac.name %></p>
+    <p><%= transac.created_at.strftime('%d-%B-%Y') %></p>
+  </div>
+  <div class="amount-container">
+    <p>$<%= transac.amount %></p>
+  </div>
+</div>
