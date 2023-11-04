@@ -171,6 +171,6 @@ If you like  this project, show your support by giving a star ⭐️, thanks in 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Chandan-devs-tech/budget-app/blob/feature/deployment/MIT.md) licensed.
+This project is [MIT](https://github.com/Chandan-devs-tech/budget-app/blob/feature/capstone-project-setup/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
